@@ -39,3 +39,6 @@ header{
     padding: 30px 18%;
     transition: .3s;
 }
+section {
+    padding: 100px 18%;
+}

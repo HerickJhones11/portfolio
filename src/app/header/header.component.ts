@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -8,8 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   constructor() { }
-
   ngOnInit(): void {
+    let header = document.querySelector("header");
+    window.addEventListener("scroll", function() {
+      header?.classList.toggle("sticky", window.scrollY > 0);
+    });
   }
 
 }
