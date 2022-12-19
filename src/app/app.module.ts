@@ -7,6 +7,10 @@ import { HomeComponent } from './home/home.component';
 import { SubServiceComponent } from './sub-service/sub-service.component';
 import { AboutComponent } from './about/about.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ServiceComponent } from './service/service.component';
+import { WorkComponent } from './work/work.component';
+import { ContactComponent } from './contact/contact.component';
+import { EndsComponent } from './ends/ends.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +19,11 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     HomeComponent,
     SubServiceComponent,
     AboutComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    ServiceComponent,
+    WorkComponent,
+    ContactComponent,
+    EndsComponent
   ],
   imports: [
     BrowserModule
